@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+        int[] array = new int[20];
+        System.out.println("Массив: ");
+        for (int i = 1; i < array.length; i++) {
+            if (i<2) {
+                array[i]=1;
+            }
+            else {
+                array[i]=array[i-2] + array[i-1];
+            }
+        }
+        System.out.println(Arrays.toString(array));
+
+    }
+}
